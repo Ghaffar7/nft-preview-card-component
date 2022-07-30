@@ -38,6 +38,11 @@ main {
     border-radius: 10px;
 }
 
+.card img {
+    background-color: hsl(178, 100%, 50%);
+    background: url(./images/icon-view.svg);
+    cursor: pointer;
+}
 .card h3 {
     font-weight: 600;
     color: hsl(0, 0%, 100%);
@@ -45,6 +50,10 @@ main {
     margin-bottom: 16px;
 }
 
+.card h3:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
 .card p {
     color: hsl(215, 51%, 70%);
 }
@@ -82,4 +91,9 @@ svg {
 
 .owner span {
     color: hsl(0, 0%, 100%);
+}
+
+.owner span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
