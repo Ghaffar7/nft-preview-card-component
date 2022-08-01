@@ -13,87 +13,106 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    width: 100%;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    height: 510px;
-    background-color: hsl(216, 50%, 16%);
-    border-radius: 15px;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 50%;
-    justify-content: space-evenly;
-    padding: 0 35px;
-}
-
-.card img {
-    border-radius: 10px;
-}
-
-.card img {
-    background-color: hsl(178, 100%, 50%);
-    background: url(./images/icon-view.svg);
-    cursor: pointer;
-}
-.card h3 {
-    font-weight: 600;
+h1 {
+    font-size: 22px;
     color: hsl(0, 0%, 100%);
-    margin-top: 16px;
-    margin-bottom: 16px;
 }
 
-.card h3:hover {
-    color: hsl(178, 100%, 50%);
-    cursor: pointer;
-}
-.card p {
+p {
+    font-size: 18px;
+    line-height: 25px;
     color: hsl(215, 51%, 70%);
 }
 
-.info {
-    display: flex;
-    align-items: center;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-
-
-.info .amount {
-    color: hsl(178, 100%, 50%);
-}
-
-.duration {
-    padding-left: 20px;
-}
-svg {
-    margin: 0 10px;
-}
-
-.owner {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.owner p {
-    padding-left: 20px;
-} 
-
-.owner span {
+label {
     color: hsl(0, 0%, 100%);
 }
 
-.owner span:hover {
+.card {
+    background-color: hsl(216, 50%, 16%);
+    width: 330px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.image {
+    background: url(./images/image-equilibrium.jpg);
+    background-size: cover;
+    height: 280px;
+    width: 280px;
+    border-radius: 10px;
+}
+
+.overlay {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(178, 100%, 50%, 0.4);
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+h1:hover, label:hover {
     color: hsl(178, 100%, 50%);
     cursor: pointer;
 }
+
+.details {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 16px 21px 20px;
+}
+
+.desc {
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    display: flex;
+    align-items: center;
+}
+
+svg {
+    margin: 0 7px;
+}
+
+.creator {
+    border-top: 1px solid hsl(215, 32%, 27%);
+    display: flex;
+    padding-top: 18px;
+    align-items: center;
+}
+
+.creator p, span p {
+    font-size: 14px;
+}
+
+.creator img {
+    height: 34px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin: 0 15px 0 0;
+}
+
