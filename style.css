@@ -95,7 +95,7 @@ h1:hover, label:hover {
     justify-content: space-between;
 }
 
-span {
+.desc-content {
     display: flex;
     align-items: center;
 }
